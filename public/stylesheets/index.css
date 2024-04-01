@@ -1,0 +1,35 @@
+.company-color{
+    color: #03204c;
+}
+
+.company-color-2{
+    color: #5bdbec;
+}
+
+.title{
+    display: inline;
+}
+
+nav .container-fluid{
+    background-color: #03204c;
+}
+
+.card{
+    height: 240px;
+    border-radius: 20px;
+}
+
+.card-odd{
+    color: #fff;
+    background-color: #03204c;
+}
+
+.card-even{
+    color: #03204c;
+    background-color: rgb(210, 210, 210);
+}
+
+.icon{
+    font-size: 50px;
+    text-align: center;
+}
