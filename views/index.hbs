@@ -2,50 +2,69 @@
     <link rel="stylesheet" href="/stylesheets/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </section>
+
 <header>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid d-flex align-items-center justify-content-center">
-            <a class="navbar-brand" href="/"><img src="./images/logo.png" alt="Company Logo" style="margin: 8px;" srcset=""></a>
-            
+    <nav class="navbar navbar-expand-lg fixed-top " style="padding: 0!important;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="Company Logo" style="margin: 8px;" srcset=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-light"></span>
+                <span class="navbar-toggler-icon" ></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 text-center" style="display: flex; ">
-                <li class="nav-item ">
-                    <a class="nav-link  text-light" aria-current="page" href="#">Solutions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  text-light" href="#">Services</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle  text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Carrers
-                    </a>
-                    <ul class="dropdown-menu text-light">
-                    <li><a class="dropdown-item text-light" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Solutions
+                            </a>
+                            <ul class="dropdown-menu company-color">
+                                <li><a class="dropdown-item " first-item="" href="#">Overview</a></li>
+                                <li><a class="dropdown-item " href="#">Container Tracking</a></li>
+                                <li><a class="dropdown-item " href="#">Container Tracking</a></li>
+                                <li><a class="dropdown-item " href="#">Shipping</a></li>
+                                <li><a class="dropdown-item " href="#">Factory</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu company-color">
+                                <li><a class="dropdown-item " first-item="" href="#">Overview</a></li>
+                                <li><a class="dropdown-item " href="#">Software Development</a></li>
+                                <li><a class="dropdown-item " href="#">Quality Assurance</a></li>
+                                <li><a class="dropdown-item " href="#">Global Service Desk</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Carrers
+                            </a>
+                            <ul class="dropdown-menu company-color">
+                                <li><a class="dropdown-item " first-item="" href="#">Overview</a></li>
+                                <li><a class="dropdown-item " href="#">Experienced Hiring</a></li>
+                                <li><a class="dropdown-item " href="#">Fresher Training Program</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  text-light" href="#">About Us</a>
-                </li>
-            </ul>
+                    
+                </div>
+                <button class="btn btn-light fw-bold mx-5 btn-contact" type="submit">Contact Us</button>
             </div>
-            <button class="btn btn-light fw-bold mx-5" type="submit">Contact Us</button>
         </div>
-        </nav>
+    </nav>
 </header>
 
-<div class="main">
+<main style="margin-top: 80px!important;">
     <div class="container my-3">
         <div class="row">
-            <div class="col-6 d-flex justify-content-center">
+            <div class="col-lg-6 col-12 d-flex justify-content-center my-2">
                 <iframe style="width: 100%; min-height: 40vh;" src="https://www.youtube.com/embed/rNjUDw5E6tY" title="CyberLogitec ONE final101818 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-12 my-2">
                 <div class="row">
                     <h2 class="company-color">Create a Global Support Hub with</h2>
                     <h2 class="company-color-2">Global Service Desk</h2>
@@ -54,11 +73,11 @@
             </div>
         </div>
         <div class="row mt-5 justify-content-between">
-            <div class="col-12  text-center">
+            <div class="col-12 text-center">
                 <h1 class="title company-color">What </h1> <h1 class="title company-color-2">we can do</h1>
             </div>
 
-            <div class="col-4 my-2">
+            <div class="col-xl-4 col-lg-6 col-12 my-2">
                 <div class="card card-odd col-12 px-3">
                     <div class="icon">
                         <i class="bi bi-ticket-perforated-fill"></i>
@@ -68,69 +87,90 @@
                 </div>
             </div>
 
-            <div class="col-4 my-2">
+            <div class="col-xl-4 col-lg-6 col-12 my-2">
                 <div class="card card-even col-12 px-3">
                     <div class="icon">
                         <i class="bi bi-ticket-perforated-fill"></i>
                     </div>
-                    <h5>Customer's Requirements Managed By Help Desk Software.</h5>
-                    <p>Enable to provide quick and esay answers to help seekers. makes it simple to organize, prioritize.</p>
+                    <h5>Deliver On SLAs</h5>
+                    <p>Nail your Service Level Agreements, every time. Get the important things done first with prioritized queues.</p>
                 </div>
             </div>
 
-            <div class="col-4 my-2">
+            <div class="col-xl-4 col-lg-6 col-12 my-2">
                 <div class="card card-odd col-12 px-3">
                     <div class="icon">
                         <i class="bi bi-ticket-perforated-fill"></i>
                     </div>
-                    <h5>Customer's Requirements Managed By Help Desk Software.</h5>
-                    <p>Enable to provide quick and esay answers to help seekers. makes it simple to organize, prioritize.</p>
+                    <h5>Offer Self-Service</h5>
+                    <p>Help customers help themselves, scale support with a limited staff. Save time and reduce tickets with an integrated knowledge base.</p>
                 </div>
             </div>
 
-            <div class="col-4 my-2">
+            <div class="col-xl-4 col-lg-6 col-12 my-2">
                 <div class="card card-even col-12 px-3">
                     <div class="icon">
                         <i class="bi bi-ticket-perforated-fill"></i>
                     </div>
-                    <h5>Customer's Requirements Managed By Help Desk Software.</h5>
-                    <p>Enable to provide quick and esay answers to help seekers. makes it simple to organize, prioritize.</p>
+                    <h5>Automate Those Repetitive Tasks</h5>
+                    <p>We always try to set up automations for the routine tasks so that we can focus on solving the important stuff and help lighten the workload.</p>
                 </div>
             </div>
 
-            <div class="col-4 my-2">
+            <div class="col-xl-4 col-lg-6 col-12 my-2">
                 <div class="card card-odd col-12 px-3">
                     <div class="icon">
                         <i class="bi bi-ticket-perforated-fill"></i>
                     </div>
-                    <h5>Customer's Requirements Managed By Help Desk Software.</h5>
-                    <p>Enable to provide quick and esay answers to help seekers. makes it simple to organize, prioritize.</p>
+                    <h5>Customer's Requirements Tracked And Reported On Metrics</h5>
+                    <p>We difinitely keep an eye on key operational metrics like most IT organizations. But we've stopped obsessing over random KPIs, and we're way more focused now on measuring what matters most. To summarize, we put the customer experience first, and spend our time drilling into the trends and numbers that can help us make the biggest improvements.</p>
                 </div>
             </div>
 
-            <div class="col-4 my-2">
+            <div class="col-xl-4 col-lg-6 col-12 my-2">
                 <div class="card card-even col-12 px-3">
                     <div class="icon">
                         <i class="bi bi-ticket-perforated-fill"></i>
                     </div>
-                    <h5>Customer's Requirements Managed By Help Desk Software.</h5>
-                    <p>Enable to provide quick and esay answers to help seekers. makes it simple to organize, prioritize.</p>
+                    <h5>Up-To-date Staff Traning</h5>
+                    <p>CLV helpdesk's tool is always available with the up to date workaround, training materials, guideline document, FAQ from users... We had a clear plan to make sure all of helpdesk team members could have the easiest way to reach them in the fastest way when they need to.</p>
                 </div>
             </div>
            
         </div>
         <div class="row">
-            <a href="" class="company-color" style="font-size: large; font-weight: bold;">Previous Page</a>
-            <h3 class="company-color-2">Quanlity Assurance</h3>
+            <a href="#" class="company-color" style="font-size: large; font-weight: bold; text-decoration: none;">Previous Page</a>
+            <h3 class="company-color-2">Quality Assurance</h3>
         </div>
     </div>
-</div>
+</main>
 
 <footer>
     <hr style="height: 3px;">
-    <div class="container">
+    <div class="container my-3">
         <div class="row">
-            
+            <div class="col-6">
+                <a href="#"><i class="bi bi-youtube icon-footer"></i></a>
+                <a href="#"><i class="bi bi-facebook icon-footer"></i></a>
+            </div>
+            <div class="col-6 text-end d-flex justify-content-end align-items-center">
+                <a href="#" class="footer-link">CONTACT US</a>
+                <a href="#" class="footer-link">JOIN US</a>
+            </div>
         </div>
     </div>
 </footer>
+
+<section>
+    <script>
+        $(document).ready(function() {
+            $('.dropdown').focus(function() {
+                $(this).addClass('show');
+                $(this).find('.dropdown-menu').addClass('show');
+            }, function() {
+                $(this).removeClass('show');
+                $(this).find('.dropdown-menu').removeClass('show');
+            });
+        });
+    </script>
+</section>
