@@ -114,7 +114,88 @@ nav .container-fluid{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
+    .navbar-brand img{
+        width: auto;
+        height: 80px;
+        padding: 16px;
+    }
+
+    .nav-link{
+        font-size: xx-large;
+    }
+
+    .nav-item{
+        padding: 8px 0px;
+    }
+
+    .dropdown-item{
+        font-size: xx-large;
+    }
+
+    .navbar-collapse{
+        display: inline;
+        left: 0!important;
+        justify-content: start!important;
+        margin-left: 8px;
+    }
+
+    .navbar-nav{
+        width: 80%;
+    }
+
+    .dropdown{
+        width: 60%;
+    }
+
+    .navbar-toggler-icon {
+        height: 72px;
+        width: 72px;
+    }
+
+    .card{
+        height: auto;
+        border-radius: 20px;
+        padding-bottom: 24px;
+    }
+
+    .btn-contact{
+        font-size: xx-large;
+        white-space: nowrap;
+        margin-bottom: 16px;
+    }
+
+    /* CSS for main content */
+
+    main .container{
+        margin-top: 160px!important;
+        max-width: 800px;
+    }
+
+    main .container h1{
+        font-size: xx-large;
+    }
+
+    main .container h2{
+        font-size: xx-large;
+    }
+
+    main .container h5{
+        font-size: xx-large;
+    }
+
+    main .container p{
+        font-size: x-large;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar-brand img{
+        width: 120px;
+        height: auto;
+        padding: 16px;
+    }
+
     .card{
         height: 300px;
         border-radius: 20px;
@@ -126,33 +207,3 @@ nav .container-fluid{
     }
    
 }
-
-
-@media screen and (max-width: 992px) {
-    .navbar-collapse{
-        display: inline;
-        left: 0!important;
-        justify-content: start!important;
-        margin-left: 8px;
-    }
-
-    .navbar-nav{
-        width: 60%;
-    }
-
-    .dropdown{
-        width: 60%;
-    }
-
-    .card{
-        height: auto;
-        border-radius: 20px;
-        padding-bottom: 24px;
-    }
-
-    .btn-contact{
-        white-space: nowrap;
-        margin-bottom: 16px;
-    }
-}
-

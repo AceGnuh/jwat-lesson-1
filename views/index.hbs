@@ -3,26 +3,36 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </section>
 
+{{!-- header and navigation bar --}}
 <header>
     <nav class="navbar navbar-expand-lg fixed-top " style="padding: 0!important;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="Company Logo" style="margin: 8px;" srcset=""></a>
+            {{!-- company logo --}}
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" alt="Company Logo" style="margin: 8px;" srcset="">
+            </a>
+            
+            {{!-- collapse button --}}
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" ></span>
             </button>
+
+            {{!-- navigation item --}}
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                
+                    {{!-- menu area --}}
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Solutions
                             </a>
                             <ul class="dropdown-menu company-color">
-                                <li><a class="dropdown-item " first-item="" href="#">Overview</a></li>
-                                <li><a class="dropdown-item " href="#">Forwarding</a></li>
-                                <li><a class="dropdown-item " href="#">Container Tracking</a></li>
-                                <li><a class="dropdown-item " href="#">Shipping</a></li>
-                                <li><a class="dropdown-item " href="#">Factory</a></li>
+                                <li><a class="dropdown-item" first-item="" href="#">Overview</a></li>
+                                <li><a class="dropdown-item" href="#">Forwarding</a></li>
+                                <li><a class="dropdown-item" href="#">Container Tracking</a></li>
+                                <li><a class="dropdown-item" href="#">Shipping</a></li>
+                                <li><a class="dropdown-item" href="#">Factory</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -30,10 +40,10 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu company-color">
-                                <li><a class="dropdown-item " first-item="" href="#">Overview</a></li>
-                                <li><a class="dropdown-item " href="#">Software Development</a></li>
-                                <li><a class="dropdown-item " href="#">Quality Assurance</a></li>
-                                <li><a class="dropdown-item " href="#">Global Service Desk</a></li>
+                                <li><a class="dropdown-item" first-item="" href="#">Overview</a></li>
+                                <li><a class="dropdown-item" href="#">Software Development</a></li>
+                                <li><a class="dropdown-item" href="#">Quality Assurance</a></li>
+                                <li><a class="dropdown-item" href="#">Global Service Desk</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -41,25 +51,28 @@
                                 Carrers
                             </a>
                             <ul class="dropdown-menu company-color">
-                                <li><a class="dropdown-item " first-item="" href="#">Overview</a></li>
-                                <li><a class="dropdown-item " href="#">Experienced Hiring</a></li>
-                                <li><a class="dropdown-item " href="#">Fresher Training Program</a></li>
+                                <li><a class="dropdown-item" first-item="" href="#">Overview</a></li>
+                                <li><a class="dropdown-item" href="#">Experienced Hiring</a></li>
+                                <li><a class="dropdown-item" href="#">Fresher Training Program</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
-                    </ul>
-                    
+                    </ul>   
                 </div>
+
+                {{!-- contact buuton --}}
                 <button class="btn btn-light fw-bold mx-5 btn-contact" type="submit">Contact Us</button>
             </div>
         </div>
     </nav>
 </header>
 
+{{!-- main page --}}
 <main style="margin-top: 80px!important;">
     <div class="container my-3">
+        {{!-- introduction area --}}
         <div class="row">
             <div class="col-lg-6 col-12 d-flex justify-content-center my-2 video">
                 <iframe class="video" style="width: 100%; height: 20rem;" src="https://www.youtube.com/embed/rNjUDw5E6tY" title="CyberLogitec ONE final101818 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -73,11 +86,13 @@
             </div>
         </div>
 
+        {{!-- content area --}}
         <div class="row mt-5 justify-content-between">
             <div class="col-12 text-center">
                 <h1 class="title company-color">What </h1> <h1 class="title company-color-2">we can do</h1>
             </div>
 
+            {{!-- detail information in the card --}}
             <div class="col-12 col-lg-6 col-xl-4 my-2">
                 <div class="card card-odd px-3">
                     <div class="icon">
@@ -88,6 +103,7 @@
                 </div>
             </div>
 
+            {{!-- detail information in the card --}}
             <div class="col-12 col-lg-6 col-xl-4 my-2">
                 <div class="card card-even col-12 px-3">
                     <div class="icon">
@@ -98,6 +114,7 @@
                 </div>
             </div>
 
+            {{!-- detail information in the card --}}
             <div class="col-12 col-lg-6 col-xl-4 my-2">
                 <div class="card card-odd col-12 px-3">
                     <div class="icon">
@@ -108,6 +125,7 @@
                 </div>
             </div>
 
+            {{!-- detail information in the card --}}
             <div class="col-12 col-lg-6 col-xl-4 my-2">
                 <div class="card card-even col-12 px-3">
                     <div class="icon">
@@ -118,6 +136,7 @@
                 </div>
             </div>
 
+            {{!-- detail information in the card --}}
             <div class="col-12 col-lg-6 col-xl-4 my-2">
                 <div class="card card-odd col-12 px-3">
                     <div class="icon">
@@ -128,6 +147,7 @@
                 </div>
             </div>
 
+            {{!-- detail information in the card --}}
             <div class="col-12 col-lg-6 col-xl-4 my-2">
                 <div class="card card-even col-12 px-3">
                     <div class="icon">
@@ -137,8 +157,9 @@
                     <p>CLV helpdesk's tool is always available with the up to date workaround, training materials, guideline document, FAQ from users... We had a clear plan to make sure all of helpdesk team members could have the easiest way to reach them in the fastest way when they need to.</p>
                 </div>
             </div>
-           
         </div>
+
+        {{!-- move to next page --}}
         <div class="row">
             <a href="#" class="company-color" style="font-size: large; font-weight: bold; text-decoration: none;">Previous Page</a>
             <h3 class="company-color-2">Quality Assurance</h3>
@@ -146,14 +167,18 @@
     </div>
 </main>
 
+{{!-- footer page --}}
 <footer>
     <hr style="height: 3px;">
     <div class="container my-3">
         <div class="row">
+            {{!-- youtube and facebook link --}}
             <div class="col-6">
                 <a href="#"><i class="bi bi-youtube icon-footer"></i></a>
                 <a href="#"><i class="bi bi-facebook icon-footer"></i></a>
             </div>
+
+            {{!-- contact information --}}
             <div class="col-6 text-end d-flex justify-content-end align-items-center">
                 <a href="#" class="footer-link">CONTACT US</a>
                 <a href="#" class="footer-link">JOIN US</a>
