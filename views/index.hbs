@@ -19,7 +19,7 @@
                             </a>
                             <ul class="dropdown-menu company-color">
                                 <li><a class="dropdown-item " first-item="" href="#">Overview</a></li>
-                                <li><a class="dropdown-item " href="#">Container Tracking</a></li>
+                                <li><a class="dropdown-item " href="#">Forwarding</a></li>
                                 <li><a class="dropdown-item " href="#">Container Tracking</a></li>
                                 <li><a class="dropdown-item " href="#">Shipping</a></li>
                                 <li><a class="dropdown-item " href="#">Factory</a></li>
@@ -61,8 +61,8 @@
 <main style="margin-top: 80px!important;">
     <div class="container my-3">
         <div class="row">
-            <div class="col-lg-6 col-12 d-flex justify-content-center my-2">
-                <iframe style="width: 100%; min-height: 40vh;" src="https://www.youtube.com/embed/rNjUDw5E6tY" title="CyberLogitec ONE final101818 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="col-lg-6 col-12 d-flex justify-content-center my-2 video">
+                <iframe class="video" style="width: 100%; height: 20rem;" src="https://www.youtube.com/embed/rNjUDw5E6tY" title="CyberLogitec ONE final101818 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="col-lg-6 col-12 my-2">
                 <div class="row">
@@ -72,13 +72,14 @@
                 </div>
             </div>
         </div>
+
         <div class="row mt-5 justify-content-between">
             <div class="col-12 text-center">
                 <h1 class="title company-color">What </h1> <h1 class="title company-color-2">we can do</h1>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-12 my-2">
-                <div class="card card-odd col-12 px-3">
+            <div class="col-12 col-lg-6 col-xl-4 my-2">
+                <div class="card card-odd px-3">
                     <div class="icon">
                         <i class="bi bi-ticket-perforated-fill"></i>
                     </div>
@@ -87,50 +88,50 @@
                 </div>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-12 my-2">
+            <div class="col-12 col-lg-6 col-xl-4 my-2">
                 <div class="card card-even col-12 px-3">
                     <div class="icon">
-                        <i class="bi bi-ticket-perforated-fill"></i>
+                        <i class="bi bi-award-fill"></i>
                     </div>
                     <h5>Deliver On SLAs</h5>
                     <p>Nail your Service Level Agreements, every time. Get the important things done first with prioritized queues.</p>
                 </div>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-12 my-2">
+            <div class="col-12 col-lg-6 col-xl-4 my-2">
                 <div class="card card-odd col-12 px-3">
                     <div class="icon">
-                        <i class="bi bi-ticket-perforated-fill"></i>
+                        <i class="bi bi-bag-check-fill"></i>
                     </div>
                     <h5>Offer Self-Service</h5>
                     <p>Help customers help themselves, scale support with a limited staff. Save time and reduce tickets with an integrated knowledge base.</p>
                 </div>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-12 my-2">
+            <div class="col-12 col-lg-6 col-xl-4 my-2">
                 <div class="card card-even col-12 px-3">
                     <div class="icon">
-                        <i class="bi bi-ticket-perforated-fill"></i>
+                        <i class="bi bi-bar-chart-fill"></i>
                     </div>
                     <h5>Automate Those Repetitive Tasks</h5>
                     <p>We always try to set up automations for the routine tasks so that we can focus on solving the important stuff and help lighten the workload.</p>
                 </div>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-12 my-2">
+            <div class="col-12 col-lg-6 col-xl-4 my-2">
                 <div class="card card-odd col-12 px-3">
                     <div class="icon">
-                        <i class="bi bi-ticket-perforated-fill"></i>
+                        <i class="bi bi-brilliance"></i>
                     </div>
                     <h5>Customer's Requirements Tracked And Reported On Metrics</h5>
                     <p>We difinitely keep an eye on key operational metrics like most IT organizations. But we've stopped obsessing over random KPIs, and we're way more focused now on measuring what matters most. To summarize, we put the customer experience first, and spend our time drilling into the trends and numbers that can help us make the biggest improvements.</p>
                 </div>
             </div>
 
-            <div class="col-xl-4 col-lg-6 col-12 my-2">
+            <div class="col-12 col-lg-6 col-xl-4 my-2">
                 <div class="card card-even col-12 px-3">
                     <div class="icon">
-                        <i class="bi bi-ticket-perforated-fill"></i>
+                        <i class="bi bi-browser-edge"></i>
                     </div>
                     <h5>Up-To-date Staff Traning</h5>
                     <p>CLV helpdesk's tool is always available with the up to date workaround, training materials, guideline document, FAQ from users... We had a clear plan to make sure all of helpdesk team members could have the easiest way to reach them in the fastest way when they need to.</p>
@@ -163,6 +164,7 @@
 
 <section>
     <script>
+        /*
         $(document).ready(function() {
             $('.dropdown').focus(function() {
                 $(this).addClass('show');
@@ -172,5 +174,24 @@
                 $(this).find('.dropdown-menu').removeClass('show');
             });
         });
+        
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Code to be executed when the DOM is ready
+            let dropdowns = document.querySelectorAll('.dropdown');
+
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('focus', function() {
+                    this.classList.add('show');
+                    this.querySelector('.dropdown-menu').classList.add('show');
+                });
+
+                dropdown.addEventListener('blur', function() {
+                    this.classList.remove('show');
+                    this.querySelector('.dropdown-menu').classList.remove('show');
+                });
+            });
+        }); 
+        */
     </script>
 </section>
