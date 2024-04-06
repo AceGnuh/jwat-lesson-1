@@ -1,6 +1,6 @@
 :root{
     --primary-color: #03204c;
-    --secondary-color: #5bdbec;
+    --secondary-color: #3bc4e2;
 }
 
 .company-color{
@@ -60,6 +60,7 @@ nav .container-fluid{
 .nav-link{
     color: #fff!important;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .dropdown-menu{
@@ -118,6 +119,12 @@ nav .container-fluid{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
+/* .btn-contact ::clic{
+    color: #fff;
+    background-color: var(--secondary-color)!important;
+
+} */
+
 @media only screen and (max-width: 992px){
     .navbar-brand img{
         width: auto;
@@ -151,7 +158,18 @@ nav .container-fluid{
     }
 
     .dropdown{
-        width: 60%;
+        width: 110%;
+    }
+
+    .nav-item .dropdown-menu{
+        width: 90%;
+        position: absolute;
+        left: -12px;
+    }
+
+    .dropdown-toggle::after{
+        position: absolute;
+        right: 0px;
     }
 
     .navbar-toggler{
@@ -160,8 +178,8 @@ nav .container-fluid{
     }
 
     .navbar-toggler-icon {
-        height: 64px;
-        width: 64px;
+        height: 40px;
+        width: 40px;
     }
 
     .card{
@@ -202,21 +220,3 @@ nav .container-fluid{
     }
 }
 
-@media only screen and (max-width: 576px) {
-    .navbar-brand img{
-        width: 120px;
-        height: auto;
-        padding: 16px;
-    }
-
-    .card{
-        height: 300px;
-        border-radius: 20px;
-        padding-bottom: 24px;
-    }
-
-    iframe.video{
-        height: 30vh;
-    }
-   
-}

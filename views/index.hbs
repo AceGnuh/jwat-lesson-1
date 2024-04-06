@@ -18,11 +18,18 @@
             </button>
 
             {{!-- navigation item --}}
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                                {{!-- contact buuton --}}
+                <button class="btn btn-light fw-bold mx-5 btn-contact" type="submit">Contact Us</button>
+
+                <div class="drop-down-menu collapse navbar-collapse d-flex justify-content-center ps-5 px-lg-2" id="navbarSupportedContent">
                 
                     {{!-- menu area --}}
                     <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item col order-lg-last">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Solutions
@@ -56,14 +63,11 @@
                                 <li><a class="dropdown-item" href="#">Fresher Training Program</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
+                        
                     </ul>   
                 </div>
 
-                {{!-- contact buuton --}}
-                <button class="btn btn-light fw-bold mx-5 btn-contact" type="submit">Contact Us</button>
+
             </div>
         </div>
     </nav>
@@ -76,7 +80,8 @@
         <div class="row">
             {{!-- youtube video --}}
             <div class="col-lg-6 col-12 d-flex justify-content-center my-2 video">
-                <iframe class="video" style="width: 100%; height: 20rem;" src="https://www.youtube.com/embed/rNjUDw5E6tY" title="CyberLogitec ONE final101818 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                {{!-- <iframe class="video" style="width: 100%; height: 20rem;" src="https://www.youtube.com/embed/rNjUDw5E6tY" title="CyberLogitec ONE final101818 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> --}}
+                <iframe class="video" style="width: 100%; height: 20rem;" src="https://www.youtube.com/embed/lkfI3cpjsII" title="CyberLogitec Vietnam - 24/7 Service Desk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
             {{!-- introduction information --}}

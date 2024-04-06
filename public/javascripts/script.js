@@ -1,11 +1,49 @@
-// let navbarCollapse = document.querySelector('.navbar-collapse');
-// let btnContact = document.querySelector('.btn-contact');
-// let navbarNav = document.querySelector('.navbar-nav');
 const primaryColor = '#03204c';
 const secondaryColor = '#5bdbec';
 
+let body = document.querySelector('body');
 let btnToggle = document.querySelector('.navbar-toggler');
 let btnToggleIcon = document.querySelector('.navbar-toggler-icon');
+let btnContact = document.querySelector('.btn-contact');
+
+let navbarCollapse = document.querySelector('.navbar-collapse');
+let navbarNav = document.querySelector('.navbar-nav');
+let navbarContainer = document.querySelector('nav .container-fluid');
+let mainArea = document.querySelector('main');
+
+mainArea.addEventListener('click', function() {
+    if(window.innerWidth < 992){
+        btnToggle.style.backgroundColor = primaryColor;
+
+        if(navbarCollapse.classList.contains('show')){
+            //navbarCollapse.classList.remove('show');
+            btnToggleIcon.click();
+            btnToggle.style.backgroundColor = primaryColor;
+        }
+
+    }
+
+    //change color of contact button
+    btnContact.style.backgroundColor = "#fff";
+    btnContact.style.color = primaryColor;
+});
+
+
+
+//handle click event on contact button
+// let isClickBtnContact = false;
+btnContact.addEventListener('click', function() {
+    // if(!isClickBtnContact){
+        this.style.backgroundColor = secondaryColor;
+        this.style.color = "#fff";
+        // isClickBtnContact = true;
+    // }
+    // else{
+    //     this.style.backgroundColor = "#fff";
+    //     this.style.color = "#000";
+    //     isClickBtnContact = false;
+    // }
+});
 
 //check toggle button is rotated 90 degree or not
 let isClick = false;
@@ -13,14 +51,14 @@ btnToggle.addEventListener('click', function() {
     
     if(!isClick){
         this.style.transform = 'rotate(90deg)';
-        btnToggle.style.backgroundColor = secondaryColor;
+        btnToggle.style.backgroundColor = "rgb(55 65 81)";
 
         //toggle button is clicked
         isClick = true;
     }
     else{
         this.style.transform = 'rotate(0deg)';
-        btnToggle.style.backgroundColor = primaryColor
+        btnToggle.style.backgroundColor = "rgb(55 65 81)"
 
         //toggle button is not clicked
         isClick = false;
@@ -29,6 +67,3 @@ btnToggle.addEventListener('click', function() {
     //transition effect smoothly
     this.style.transition = '0.2s linear all';
 });
-
-
-
