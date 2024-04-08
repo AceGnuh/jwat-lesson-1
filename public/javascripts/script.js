@@ -11,6 +11,20 @@ let navbarNav = document.querySelector('.navbar-nav');
 let navbarContainer = document.querySelector('nav .container-fluid');
 let mainArea = document.querySelector('main');
 
+window.onresize = function() {
+    console.log('resize');
+    if(window.innerWidth < 992){
+        
+        btnContact.style.backgroundColor = secondaryColor;
+        btnContact.style.color = "#fff";
+    }
+    else{
+        btnContact.style.backgroundColor = "#fff";
+        btnContact.style.color = primaryColor;
+    }
+
+}
+
 mainArea.addEventListener('click', function() {
     if(window.innerWidth < 992){
         btnToggle.style.backgroundColor = primaryColor;
@@ -18,14 +32,18 @@ mainArea.addEventListener('click', function() {
         if(navbarCollapse.classList.contains('show')){
             //navbarCollapse.classList.remove('show');
             btnToggleIcon.click();
-            btnToggle.style.backgroundColor = primaryColor;
+            // btnToggle.style.color = "#fff";
+            // btnToggle.style.backgroundColor = primaryColor;
         }
-
+    }
+    else{
+        btnContact.style.backgroundColor = "#fff";
+        btnContact.style.color = primaryColor;
     }
 
     //change color of contact button
-    btnContact.style.backgroundColor = "#fff";
-    btnContact.style.color = primaryColor;
+    // btnContact.style.backgroundColor = "#fff";
+    // btnContact.style.color = primaryColor;
 });
 
 
