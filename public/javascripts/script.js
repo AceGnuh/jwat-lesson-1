@@ -1,5 +1,5 @@
 const primaryColor = '#03204c';
-const secondaryColor = '#5bdbec';
+const secondaryColor = '#3bc4e2';
 
 let body = document.querySelector('body');
 let btnToggle = document.querySelector('.navbar-toggler');
@@ -18,12 +18,13 @@ let navLinkItemList = document.querySelectorAll('.nav-link');
 
 let containerList = document.querySelectorAll('.container');
 let dropdowns = document.querySelectorAll('.dropdown');
+let dropdownItems = document.querySelectorAll('.dropdown-item');
 
 document.addEventListener('DOMContentLoaded', function() {
 
     //handle hover event to expand dropdown menu
     dropdowns.forEach(function(dropdown) {
-        dropdown.addEventListener('mouseover', function() {
+        dropdown.addEventListener('mouseenter', function() {
             this.classList.add('show');
             var dropdownMenu = this.querySelector('.dropdown-menu');
             if (dropdownMenu) {
@@ -37,6 +38,16 @@ document.addEventListener('DOMContentLoaded', function() {
             if (dropdownMenu) {
                 dropdownMenu.classList.remove('show');
             }
+        });
+
+        // dropdown.addEventListener('click', function() {
+        //     this.click();
+        // })
+    });
+
+    dropdownItems.forEach(function(dropdownItem) {
+        dropdownItem.addEventListener('click', function() {
+            this.style.cssText = `backgroundColor : ${primaryColor}; color: #fff;`;
         });
     });
 

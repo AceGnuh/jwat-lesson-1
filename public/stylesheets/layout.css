@@ -54,7 +54,7 @@ nav .container-fluid{
 
 .dropdown-item{
     color: #fff;
-    background-color: transparent;
+    background-color: var(--primary-color)!important;
 }
 
 .dropdown-item :hover{
