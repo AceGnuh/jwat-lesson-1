@@ -79,12 +79,12 @@ nav .container-fluid{
     font-weight: bold;
 }
 
-.dropdown:hover .dropdown-menu .dropdown-item[first-item]:hover {
+/* .dropdown:hover .dropdown-menu .dropdown-item[first-item]:hover {
     text-decoration: underline;
     margin-left: 0;
     cursor: default;
     color: #fff;
-}
+} */
 
 .dropdown-toggle::after{
     content: none;
