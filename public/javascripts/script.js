@@ -15,27 +15,61 @@ let navbarContainer = document.querySelector('nav .container-fluid');
 let mainArea = document.querySelector('main');
 
 let dropdownToggleList = document.querySelectorAll('.dropdown-toggle');
-let menuItemList = document.querySelectorAll('.dropdown-menu');
+let dropdownMenu = document.querySelectorAll('.dropdown-menu');
+let menuItemList = document.querySelectorAll('.dropdown-toggle ul');
 let navLinkItemList = document.querySelectorAll('.nav-link');
 
+let containerList = document.querySelectorAll('.container');
 
-// if(window.innerWidth < 992){
-//     //change icon nav link after
-//     dropdownToggleList.forEach(function(dropdownToggleItem) {
-//         //dropdownToggleItem.style.backgroundColor = secondaryColor;
-//         //console.log(dropdownToggleItem.innerHTML.trim());
-//         let contentInnerDropdownItem = dropdownToggleItem.textContent.trim();
-//         dropdownToggleItem.style.content = ``;
+// dropdownToggleList.forEach(function(dropdownToggle) {
+//     dropdownToggle.addEventListener('mouseenter', function() {
+//         this.classList.toggle('show');
 //     });
-// }
-
-//handle mouseover event on nav link in menu
-// navLinkItemList.forEach(function(navItem) {
-//     navItem.addEventListener('mouseover', function() {
-//         this.click();
-//         this.siblingElement.style.cssText = `color : #fff!important`;
-//     })
 // })
+
+// handle mouseover event on nav link in menu
+// navLinkItemList.forEach(function(navItem) {
+//     navItem.addEventListener('mouseenter', function() {
+//         // navLinkItemList.forEach(function(navItem) {
+//         //     navItem.nextElementSibling.classList.remove('show');
+//         // })
+
+//         for(let i = 0; i < dropdownMenu.length; i++){
+//             dropdownMenu[i].classList.remove('show');
+//             console.log(dropdownMenu[i]);
+//         }
+
+//         this.nextElementSibling.classList.add('show');
+//     })
+
+//     // navItem.addEventListener('mouseleave', function() {
+
+//     //     this.nextElementSibling.classList.remove('show');
+//     // })
+// })
+
+document.addEventListener('DOMContentLoaded', function() {
+    var dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(function(dropdown) {
+        dropdown.addEventListener('mouseover', function() {
+            this.classList.add('show');
+            var dropdownMenu = this.querySelector('.dropdown-menu');
+            if (dropdownMenu) {
+                dropdownMenu.classList.add('show');
+            }
+        });
+
+        dropdown.addEventListener('mouseout', function() {
+            this.classList.remove('show');
+            var dropdownMenu = this.querySelector('.dropdown-menu');
+            if (dropdownMenu) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    });
+});
+
 
 menuItemList.forEach(function(menuItem) {
     menuItem.addEventListener('mouseover', function() {
@@ -71,10 +105,48 @@ menuItemList.forEach(function(menuItem) {
 //     });
 // });
 
+function handleSizeWindow() {
+    if(window.innerWidth > 1600){
+        
+        containerList.forEach(function(containerItem) {
+            containerItem.classList.remove('container');
+            containerItem.classList.add('container-fluid');
+            
+        })
+
+    }
+    else{
+        containerList.forEach(function(containerItem) {
+            containerItem.classList.remove('container-fluid');
+            containerItem.classList.add('container');
+        })
+    }
+}
+
+handleSizeWindow();
+
 //handle resize event on window
 window.onresize = function() {
-    console.log('resize');
-    if(window.innerWidth < 992){  
+    console.log("resize > 1600");
+
+
+    if(window.innerWidth > 1600){
+        
+        containerList.forEach(function(containerItem) {
+            containerItem.classList.remove('container');
+            containerItem.classList.add('container-fluid');
+            
+        })
+
+    }
+    else{
+        containerList.forEach(function(containerItem) {
+            containerItem.classList.remove('container-fluid');
+            containerItem.classList.add('container');
+        })
+    }
+
+    if(window.innerWidth <= 992){  
         btnContact.style.backgroundColor = secondaryColor;
         btnContact.style.color = "#fff";
 
