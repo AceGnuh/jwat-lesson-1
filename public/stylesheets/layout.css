@@ -69,7 +69,7 @@ nav .container-fluid{
 
 .dropdown:hover .dropdown-menu .dropdown-item:hover {
     display: block;
-    color: var(--secondary-color);
+    color: var(--secondary-color)!important;
     background-color: transparent;
 }
 

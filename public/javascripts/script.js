@@ -43,6 +43,9 @@ menuItemList.forEach(function(menuItem) {
         let siblingElement = this.previousElementSibling;
         siblingElement.style.cssText = `color : ${secondaryColor}!important`;
         //this.click();
+        navLinkItemList.forEach(function(navItem) {
+            navItem.style.cssText = `color : #fff`;
+        })
     });
 
     menuItem.addEventListener('mouseout', function() {
@@ -97,10 +100,6 @@ mainArea.addEventListener('click', function() {
     else{
         btnContact.style.backgroundColor = "#fff";
         btnContact.style.color = primaryColor;
-
-        navLinkItemList.forEach(function(navItem) {
-            navItem.style.cssText = "color: #fff!important";
-        })
     }
 
     //change color of contact button
