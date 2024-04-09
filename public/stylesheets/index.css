@@ -141,6 +141,16 @@ main{
     background-color: whitesmoke;
 }
 
+.footer-link{
+    font-size: large; 
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+.tag-content{
+    margin-left: 24px;
+}
+
 @media only screen and (max-width: 992px){
     /* .navbar-brand img{
         width: auto;

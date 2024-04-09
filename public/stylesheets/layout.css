@@ -93,7 +93,7 @@ nav .container-fluid{
 a .bi-chevron-down{
     margin-left: 4px;
     font-weight: bolder;
-    -webkit-text-stroke: 1px;
+    /* -webkit-text-stroke: 1px; */
 }
 
 .navbar-toggler-icon {
@@ -103,6 +103,14 @@ a .bi-chevron-down{
 .navbar-toggler-icon :focus {
     border: 1px solid #fff;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.btn-contact:hover{
+    color: #fff;
+    background-color: var(--secondary-color)!important;
+    /* font-size: xx-large;
+    white-space: nowrap;
+    margin-bottom: 16px; */
 }
 
 .icon{
