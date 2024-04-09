@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("resize > 1600");
 
 
-        if(window.innerWidth > 1600){
+        if(window.innerWidth > 1500){
             
             containerList.forEach(function(containerItem) {
                 containerItem.classList.remove('container');
