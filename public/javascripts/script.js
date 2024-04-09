@@ -1,9 +1,6 @@
 const primaryColor = '#03204c';
 const secondaryColor = '#5bdbec';
 
-// const { primaryColor, secondaryColor } = require('./config.js') ;
-// import './config.js';
-
 let body = document.querySelector('body');
 let btnToggle = document.querySelector('.navbar-toggler');
 let btnToggleIcon = document.querySelector('.navbar-toggler-icon');
@@ -20,37 +17,11 @@ let menuItemList = document.querySelectorAll('.dropdown-toggle ul');
 let navLinkItemList = document.querySelectorAll('.nav-link');
 
 let containerList = document.querySelectorAll('.container');
-
-// dropdownToggleList.forEach(function(dropdownToggle) {
-//     dropdownToggle.addEventListener('mouseenter', function() {
-//         this.classList.toggle('show');
-//     });
-// })
-
-// handle mouseover event on nav link in menu
-// navLinkItemList.forEach(function(navItem) {
-//     navItem.addEventListener('mouseenter', function() {
-//         // navLinkItemList.forEach(function(navItem) {
-//         //     navItem.nextElementSibling.classList.remove('show');
-//         // })
-
-//         for(let i = 0; i < dropdownMenu.length; i++){
-//             dropdownMenu[i].classList.remove('show');
-//             console.log(dropdownMenu[i]);
-//         }
-
-//         this.nextElementSibling.classList.add('show');
-//     })
-
-//     // navItem.addEventListener('mouseleave', function() {
-
-//     //     this.nextElementSibling.classList.remove('show');
-//     // })
-// })
+let dropdowns = document.querySelectorAll('.dropdown');
 
 document.addEventListener('DOMContentLoaded', function() {
-    var dropdowns = document.querySelectorAll('.dropdown');
 
+    //handle hover event to expand dropdown menu
     dropdowns.forEach(function(dropdown) {
         dropdown.addEventListener('mouseover', function() {
             this.classList.add('show');
@@ -68,26 +39,29 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    handleSizeWindow();
+
 });
 
 
-menuItemList.forEach(function(menuItem) {
-    menuItem.addEventListener('mouseover', function() {
+// menuItemList.forEach(function(menuItem) {
+//     menuItem.addEventListener('mouseover', function() {
 
-        let siblingElement = this.previousElementSibling;
-        siblingElement.style.cssText = `color : ${secondaryColor}!important`;
-        //this.click();
-        navLinkItemList.forEach(function(navItem) {
-            navItem.style.cssText = `color : #fff`;
-        })
-    });
+//         let siblingElement = this.previousElementSibling;
+//         siblingElement.style.cssText = `color : ${secondaryColor}!important`;
+//         //this.click();
+//         navLinkItemList.forEach(function(navItem) {
+//             navItem.style.cssText = `color : #fff`;
+//         })
+//     });
 
-    menuItem.addEventListener('mouseout', function() {
+//     menuItem.addEventListener('mouseout', function() {
 
-        // let siblingElement = this.previousElementSibling;
-        this.style.cssText = `color : #fff!important`;
-    });
-});
+//         // let siblingElement = this.previousElementSibling;
+//         this.style.cssText = `color : #fff!important`;
+//     });
+// });
 
 // navLinkItemList.forEach(function(menuItem) {
 //     menuItem.addEventListener('click', function() {
@@ -123,7 +97,6 @@ function handleSizeWindow() {
     }
 }
 
-handleSizeWindow();
 
 //handle resize event on window
 window.onresize = function() {
@@ -158,6 +131,7 @@ window.onresize = function() {
 
 }
 
+//handle click event on main area
 mainArea.addEventListener('click', function() {
     if(window.innerWidth < 992){
         btnToggle.style.backgroundColor = primaryColor;
@@ -173,16 +147,11 @@ mainArea.addEventListener('click', function() {
         btnContact.style.backgroundColor = "#fff";
         btnContact.style.color = primaryColor;
     }
-
-    //change color of contact button
-    // btnContact.style.backgroundColor = "#fff";
-    // btnContact.style.color = primaryColor;
 });
 
 
 
 //handle click event on contact button
-// let isClickBtnContact = false;
 btnContact.addEventListener('click', function() {
     // if(!isClickBtnContact){
         this.style.backgroundColor = secondaryColor;
@@ -196,7 +165,7 @@ btnContact.addEventListener('click', function() {
     // }
 });
 
-//check toggle button is rotated 90 degree or not
+//handle toggle button is rotated 90 degree
 let isClick = false;
 btnToggle.addEventListener('click', function() {
     
