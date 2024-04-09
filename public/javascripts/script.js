@@ -40,9 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // dropdown.addEventListener('click', function() {
-        //     this.click();
-        // })
+        
     });
 
     dropdownItems.forEach(function(dropdownItem) {
@@ -51,9 +49,53 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    //handle resize event on window
+    window.onresize = function() {
+        console.log("resize > 1600");
+
+
+        if(window.innerWidth > 1600){
+            
+            containerList.forEach(function(containerItem) {
+                containerItem.classList.remove('container');
+                containerItem.classList.add('container-fluid');
+                
+            })
+
+        }
+        else{
+            containerList.forEach(function(containerItem) {
+                containerItem.classList.remove('container-fluid');
+                containerItem.classList.add('container');
+            })
+        }
+
+        if(window.innerWidth <= 992){  
+            btnContact.style.backgroundColor = secondaryColor;
+            btnContact.style.color = "#fff";
+
+            
+
+        }
+        else{
+            btnContact.style.backgroundColor = "#fff";
+            btnContact.style.color = primaryColor;
+        }
+
+
+
+    }
+
     handleSizeWindow();
 
 });
+
+navLinkItemList.forEach(function(navItem) {
+    navItem.addEventListener('click', function() {
+        // this.nextElementSibling.classList.add('show');
+        // console.log(this.nextElementSibling.classList);
+    })
+})
 
 
 // menuItemList.forEach(function(menuItem) {
@@ -109,38 +151,7 @@ function handleSizeWindow() {
 }
 
 
-//handle resize event on window
-window.onresize = function() {
-    console.log("resize > 1600");
 
-
-    if(window.innerWidth > 1600){
-        
-        containerList.forEach(function(containerItem) {
-            containerItem.classList.remove('container');
-            containerItem.classList.add('container-fluid');
-            
-        })
-
-    }
-    else{
-        containerList.forEach(function(containerItem) {
-            containerItem.classList.remove('container-fluid');
-            containerItem.classList.add('container');
-        })
-    }
-
-    if(window.innerWidth <= 992){  
-        btnContact.style.backgroundColor = secondaryColor;
-        btnContact.style.color = "#fff";
-
-    }
-    else{
-        btnContact.style.backgroundColor = "#fff";
-        btnContact.style.color = primaryColor;
-    }
-
-}
 
 //handle click event on main area
 mainArea.addEventListener('click', function() {
@@ -158,6 +169,14 @@ mainArea.addEventListener('click', function() {
         btnContact.style.backgroundColor = "#fff";
         btnContact.style.color = primaryColor;
     }
+
+    navLinkItemList.forEach(function(navItem) {
+        if(navItem.nextElementSibling){
+            if(navItem.nextElementSibling.classList.contains('show')){
+                navItem.nextElementSibling.classList.remove('show');
+            }
+        }
+    })
 });
 
 
