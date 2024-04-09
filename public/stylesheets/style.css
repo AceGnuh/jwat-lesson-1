@@ -1,7 +1,10 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     body{
         font-size:  x-large!important;
     }
-    
-   
+
+    /* p{
+        font-size:  xx-large!important;
+    } */
+
 }

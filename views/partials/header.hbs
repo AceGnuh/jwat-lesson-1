@@ -1,0 +1,75 @@
+<section>
+    <link rel="stylesheet" href="../stylesheets/layout.css">
+</section>
+
+{{!-- header and navigation bar --}}
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top" >
+        <div class="container-fluid">
+            {{!-- company logo --}}
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" alt="Company Logo" style="">
+            </a>
+            
+            {{!-- collapse button --}}
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+
+            {{!-- navigation item --}}
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                                {{!-- contact buuton --}}
+                <button class="btn btn-light fw-bold mx-5 btn-contact" type="submit">Contact Us</button>
+
+                <div class="drop-down-menu collapse navbar-collapse d-flex justify-content-center ps-5 px-lg-2" id="navbarSupportedContent">
+                
+                    {{!-- menu area --}}
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item col order-lg-last">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Solutions
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu company-color">
+                                <li><a class="dropdown-item" first-item="" href="#">Overview</a></li>
+                                <li><a class="dropdown-item" href="#">Forwarding</a></li>
+                                <li><a class="dropdown-item" href="#">Container Tracking</a></li>
+                                <li><a class="dropdown-item" href="#">Shipping</a></li>
+                                <li><a class="dropdown-item" href="#">Factory</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu company-color">
+                                <li><a class="dropdown-item" first-item="" href="#">Overview</a></li>
+                                <li><a class="dropdown-item" href="#">Software Development</a></li>
+                                <li><a class="dropdown-item" href="#">Quality Assurance</a></li>
+                                <li><a class="dropdown-item" href="#" style="color: 3bc4e2;">Global Service Desk</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Carrers
+                                <i class="bi bi-chevron-down fw-bold"></i>
+                            </a>
+                            <ul class="dropdown-menu company-color">
+                                <li><a class="dropdown-item" first-item="" href="#">Overview</a></li>
+                                <li><a class="dropdown-item" href="#">Experienced Hiring</a></li>
+                                <li><a class="dropdown-item" href="#">Fresher Training Program</a></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

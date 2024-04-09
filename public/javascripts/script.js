@@ -1,6 +1,9 @@
 const primaryColor = '#03204c';
 const secondaryColor = '#5bdbec';
 
+// const { primaryColor, secondaryColor } = require('./config.js') ;
+// import './config.js';
+
 let body = document.querySelector('body');
 let btnToggle = document.querySelector('.navbar-toggler');
 let btnToggleIcon = document.querySelector('.navbar-toggler-icon');
@@ -11,12 +14,59 @@ let navbarNav = document.querySelector('.navbar-nav');
 let navbarContainer = document.querySelector('nav .container-fluid');
 let mainArea = document.querySelector('main');
 
+let dropdownToggleList = document.querySelectorAll('.dropdown-toggle');
+let menuItemList = document.querySelectorAll('.dropdown-menu');
+let navLinkItemList = document.querySelectorAll('.nav-link');
+
+
+// if(window.innerWidth < 992){
+//     //change icon nav link after
+//     dropdownToggleList.forEach(function(dropdownToggleItem) {
+//         //dropdownToggleItem.style.backgroundColor = secondaryColor;
+//         //console.log(dropdownToggleItem.innerHTML.trim());
+//         let contentInnerDropdownItem = dropdownToggleItem.textContent.trim();
+//         dropdownToggleItem.style.content = ``;
+//     });
+// }
+
+//handle mouseover event on nav link in menu
+menuItemList.forEach(function(menuItem) {
+    menuItem.addEventListener('mouseover', function() {
+
+        let siblingElement = this.previousElementSibling;
+        siblingElement.style.cssText = `color : ${secondaryColor}!important`;
+    });
+
+    menuItem.addEventListener('mouseout', function() {
+
+        let siblingElement = this.previousElementSibling;
+        siblingElement.style.cssText = `color : #fff!important`;
+    });
+});
+
+// navLinkItemList.forEach(function(menuItem) {
+//     menuItem.addEventListener('click', function() {
+//         this.siblingElement.style.cssText = `color : #fff!important`;
+//     })
+// })
+
+//handle mouseover event on nav link in menu
+// menuItemList.forEach(function(menuItem) {
+//     menuItem.addEventListener('mouseout', function() {
+//         // if(this.classList.contains('show')){
+//             let siblingElement = this.previousElementSibling;
+//             siblingElement.style.cssText = `color : #fff!important`;
+//         // }
+//     });
+// });
+
+//handle resize event on window
 window.onresize = function() {
     console.log('resize');
-    if(window.innerWidth < 992){
-        
+    if(window.innerWidth < 992){  
         btnContact.style.backgroundColor = secondaryColor;
         btnContact.style.color = "#fff";
+
     }
     else{
         btnContact.style.backgroundColor = "#fff";
@@ -33,7 +83,7 @@ mainArea.addEventListener('click', function() {
             //navbarCollapse.classList.remove('show');
             btnToggleIcon.click();
             // btnToggle.style.color = "#fff";
-            // btnToggle.style.backgroundColor = primaryColor;
+            btnToggle.style.backgroundColor = primaryColor;
         }
     }
     else{
@@ -85,3 +135,4 @@ btnToggle.addEventListener('click', function() {
     //transition effect smoothly
     this.style.transition = '0.2s linear all';
 });
+
