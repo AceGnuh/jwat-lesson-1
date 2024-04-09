@@ -30,17 +30,25 @@ let navLinkItemList = document.querySelectorAll('.nav-link');
 // }
 
 //handle mouseover event on nav link in menu
+// navLinkItemList.forEach(function(navItem) {
+//     navItem.addEventListener('mouseover', function() {
+//         this.click();
+//         this.siblingElement.style.cssText = `color : #fff!important`;
+//     })
+// })
+
 menuItemList.forEach(function(menuItem) {
     menuItem.addEventListener('mouseover', function() {
 
         let siblingElement = this.previousElementSibling;
         siblingElement.style.cssText = `color : ${secondaryColor}!important`;
+        //this.click();
     });
 
     menuItem.addEventListener('mouseout', function() {
 
-        let siblingElement = this.previousElementSibling;
-        siblingElement.style.cssText = `color : #fff!important`;
+        // let siblingElement = this.previousElementSibling;
+        this.style.cssText = `color : #fff!important`;
     });
 });
 
@@ -89,6 +97,10 @@ mainArea.addEventListener('click', function() {
     else{
         btnContact.style.backgroundColor = "#fff";
         btnContact.style.color = primaryColor;
+
+        navLinkItemList.forEach(function(navItem) {
+            navItem.style.cssText = "color: #fff!important";
+        })
     }
 
     //change color of contact button
