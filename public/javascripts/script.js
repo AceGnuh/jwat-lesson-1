@@ -133,7 +133,7 @@ navLinkItemList.forEach(function(navItem) {
 // });
 
 function handleSizeWindow() {
-    if(window.innerWidth > 1600){
+    if(window.innerWidth > 1500){
         
         containerList.forEach(function(containerItem) {
             containerItem.classList.remove('container');
