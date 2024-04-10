@@ -190,7 +190,6 @@ a .bi-youtube:focus{
         justify-content: start!important;
         margin-left: 8px;
         padding-bottom: 16px;
-
     }
 
     .navbar-nav{
@@ -254,7 +253,7 @@ a .bi-youtube:focus{
     }
 
     .nav-item{
-        padding: 0px 8px 0px 8px;
+        padding: 0px 8px;
     }
 
     .nav-link i{

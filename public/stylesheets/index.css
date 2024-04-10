@@ -167,78 +167,11 @@ main{
 }
 
 @media only screen and (max-width: 991px){
-    /* .navbar-brand img{
-        width: auto;
-        height: 80px;
-        padding: 16px;
-    }
-
-    .nav-link{
-        font-size: xx-large;
-    }
-
-    .nav-item{
-        padding: 8px 0px;
-    }
-
-    .dropdown-item{
-        font-size: xx-large;
-    }
-
-    .navbar-collapse{
-        display: inline;
-        left: 0!important;
-        justify-content: start!important;
-        margin-left: 8px;
-        padding-bottom: 16px;
-
-    }
-
-    .navbar-nav{
-        width: 80%;
-    }
-
-    .dropdown{
-        width: 110%;
-    }
-
-    .nav-item .dropdown-menu{
-        width: 90%;
-        position: absolute;
-        left: -12px;
-    }
-
-    .dropdown-toggle::after{
-        content: none;
-    }
-
-    .bi-chevron-down{
-        position: absolute;
-        right: 0px;
-        font-weight: bold;
-    }
-
-    .navbar-toggler{
-        margin: 16px;
-        padding: 8px;
-    }
-
-    .navbar-toggler-icon {
-        height: 40px;
-        width: 40px;
-    }
-
-
-
-    .btn-contact{
-        color: #fff;
-        background-color: var(--secondary-color)!important;
-        font-size: xx-large;
-        white-space: nowrap;
-        margin-bottom: 16px;
-    }  */
-
     /* CSS for main content */
+
+    main{
+        margin-top: 120px;
+    }
 
     main .container{
         margin-top: 160px!important;
