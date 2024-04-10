@@ -110,9 +110,11 @@ a .bi-chevron-down{
 .btn-contact:hover{
     color: #fff!important;
     background-color: var(--secondary-color)!important;
-    /* font-size: xx-large;
-    white-space: nowrap;
-    margin-bottom: 16px; */
+}
+
+.btn-contact:focus{
+    color: #fff!important;
+    background-color: var(--secondary-color)!important;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -137,6 +139,30 @@ footer{
 
 .footer-line{
     height: 3px;
+}
+
+a .bi-facebook:hover{
+    color: #3b5998 ;
+}
+
+a .bi-facebook:focus{
+    color: #3b5998 ;
+}
+
+a .bi-youtube:hover{
+    color: #FF0000 ;
+}
+
+a .bi-youtube:focus{
+    color: #FF0000 ;
+}
+
+.footer-link:hover{
+    color: var(--secondary-color);
+}
+
+.footer-link:focus{
+    color: var(--secondary-color);
 }
 
 @media only screen and (max-width: 991px){
