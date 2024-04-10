@@ -70,12 +70,9 @@ document.addEventListener('DOMContentLoaded', function() {
             })
         }
 
-        if(window.innerWidth <= 992){  
+        if(window.innerWidth < 992){  
             btnContact.style.backgroundColor = secondaryColor;
             btnContact.style.color = "#fff";
-
-            
-
         }
         else{
             btnContact.style.backgroundColor = "#fff";
@@ -90,12 +87,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-navLinkItemList.forEach(function(navItem) {
-    navItem.addEventListener('click', function() {
-        // this.nextElementSibling.classList.add('show');
-        // console.log(this.nextElementSibling.classList);
-    })
-})
+// navLinkItemList.forEach(function(navItem) {
+//     navItem.addEventListener('click', function() {
+//         // this.nextElementSibling.classList.add('show');
+//         // console.log(this.nextElementSibling.classList);
+//     })
+// })
 
 
 // menuItemList.forEach(function(menuItem) {
@@ -151,8 +148,6 @@ function handleSizeWindow() {
 }
 
 
-
-
 //handle click event on main area
 mainArea.addEventListener('click', function() {
     if(window.innerWidth < 992){
@@ -178,7 +173,6 @@ mainArea.addEventListener('click', function() {
         }
     })
 });
-
 
 
 //handle click event on contact button
